@@ -11,6 +11,10 @@ button {
     cursor: pointer;
 }
 
+h1, h2, h3, p  {
+    margin: 0;
+}
+
 body {
     font-family: 'Roboto', sans-serif;
     color: #000000;
@@ -97,4 +101,117 @@ body {
     position: absolute;
     right: 0;
     bottom: 0;
+}
+
+.slider {
+    margin-bottom: 50px;
+}
+
+.slide {
+    display: flex;
+    align-items: center;
+    border-radius: 20px;
+    min-height: 400px;
+    padding: 100px;
+}
+
+.slide__content {
+    max-width: 400px;
+}
+
+.text--light {
+    color: #fff;
+}
+
+.slide--autumn {
+    background: linear-gradient(90deg, rgba(0, 0, 0, 0.43) 40.45%, rgba(0, 0, 0, 0) 100%), url('../image/autumn.png') center center no-repeat;
+    background-size: cover;
+}
+
+.slide__title {
+    font-weight: bold;
+    font-size: 50px;
+    line-height: 51px;
+    margin-bottom: 15px;
+}
+
+.slide__text {
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 23px;
+    margin-bottom: 33px;
+}
+
+.button {
+    display: inline-block;
+    border-radius: 25px;
+    padding: 12px 50px;
+}
+
+.button--orange {
+    background: #F47322;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 23px;
+}
+
+.promo {
+    display: flex;
+    justify-content: space-between;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex: 1;
+    border-radius: 20px;
+    padding: 36px 32px;
+    max-width: 570px;
+    min-height: 380px;
+}
+
+.card--cake {
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('../image/cake.png') center center no-repeat;
+    background-size: cover;
+}
+
+.card__title {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 23px;
+    margin-bottom: 21px;
+}
+
+.card__desc {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 23px;
+    max-width: 168px;
+}
+
+.card__price {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 23px;
+    margin-bottom: 8px;
+}
+
+.card__delivery {
+    display: block;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 23px;
+    margin-bottom: 25px;
+}
+
+.button--white {
+    background: #FFFFFF;
+    border-radius: 50px;
+    color: #5F5F61;
+}
+
+.card--salad {
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('../image/salad.png') center center no-repeat;
+    background-size: cover;
 }
