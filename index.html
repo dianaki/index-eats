@@ -9,6 +9,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style/normalize.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
     <link rel="stylesheet" href="style/style.css">
     <title>Индекс Еда</title>
 </head>
@@ -38,12 +39,51 @@
         <main class="maincontent">
             <div class="slider">
                 <div class="container">
-                    <div class="slide text--light slide--autumn">
-                        <div class="slide__content">
-                            <h2 class="slide__title">Неделя осенних овощей</h2>
-                            <p class="slide__text">Специальная овощная корзина. Новые продукты,
-                                специальные цены, скидки!</p>
-                            <a href="#" class="button button--orange">Заказать со скидкой</a>
+                    <div class="swiper">
+                        <!-- Additional required wrapper -->
+                        <div class="swiper-wrapper">
+                            <!-- Slides -->
+                            <div class="swiper-slide">
+                                <div class="slide text--light slide--autumn">
+                                    <div class="slide__content">
+                                        <h2 class="slide__title">Неделя осенних овощей</h2>
+                                        <p class="slide__text">Специальная овощная корзина. Новые продукты,
+                                            специальные цены, скидки!</p>
+                                        <a href="#" class="button button--orange">Заказать со скидкой</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="slide text--light slide--summer">
+                                    <div class="slide__content">
+                                        <h2 class="slide__title">Неделя летних
+                                            овощей</h2>
+                                        <p class="slide__text">Специальная овощная корзина. Новые продукты,
+                                            специальные цены, скидки!</p>
+                                        <a href="#" class="button button--orange">Заказать со скидкой</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="slide text--light slide--vitamins">
+                                    <div class="slide__content">
+                                        <h2 class="slide__title">Витаминная неделя</h2>
+                                        <p class="slide__text">Специальная овощная корзина. Новые продукты,
+                                            специальные цены, скидки!</p>
+                                        <a href="#" class="button button--orange">Заказать со скидкой</a>
+                                    </div>
+                                </div>
+                            </div>
+                            ...
+                        </div>
+                        <!-- If we need navigation buttons -->
+                        <div class="slider__buttons">
+                            <div class="slider__button slider__button--prev">
+                                <img src="image/arrow-left.svg" alt="стрелка влево">
+                            </div>
+                            <div class=" slider__button slider__button--next">
+                                <img src="image/arrow-right.svg" alt="стрелка вправо">
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -219,15 +259,17 @@
                             <div class="benefit__content">
                                 <h3 class="benefit__title">Как происходит
                                     производство</h3>
-                                <p class="benefit__desc">За день до доставки мы сами готовим блюда из натуральных продуктов без консервантов, красителей и гмо</p>
+                                <p class="benefit__desc">За день до доставки мы сами готовим блюда из натуральных
+                                    продуктов без консервантов, красителей и гмо</p>
                             </div>
                         </li>
                         <li class="benefit__item">
                             <img src="image/benefit-3.svg" alt="качество" class="benefit__img">
                             <div class="benefit__content">
-                                <h3 class="benefit__title">Высокие стандарты 
+                                <h3 class="benefit__title">Высокие стандарты
                                     качества</h3>
-                                <p class="benefit__desc">Наши повара с многолетним опытом с любовью готовят каждую порцию блюда</p>
+                                <p class="benefit__desc">Наши повара с многолетним опытом с любовью готовят каждую
+                                    порцию блюда</p>
                             </div>
                         </li>
                         <li class="benefit__item">
@@ -235,9 +277,9 @@
                             <div class="benefit__content">
                                 <h3 class="benefit__title">Быстрая и качественная
                                     доставка</h3>
-                                <p class="benefit__desc">Сами доставим всё прямов 
+                                <p class="benefit__desc">Сами доставим всё прямов
                                     в вашу морозилку, сохранив
-                                    температурный режим 
+                                    температурный режим
                                     и качество наших блюд</p>
                             </div>
                         </li>
@@ -274,6 +316,8 @@
             </div>
         </footer>
     </div>
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    <script src="script/main.js"></script>
 </body>
 
 </html>
